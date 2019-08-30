@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Form</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div id ="form">
+			<div class="head signup">
+				<div onclick="swap(this);" data-tab="login" class="login-tab">
+					Login
+				</div>
+				<div onclick="swap(this);" data-tab="signup" class="signup-tab">
+					Register
+				</div>
+			</div>
+			<!-- Login -->
+			<div id="form-body" class="login-form">
+				<div class="login">
+					<h1>Login Form</h1>
+					<form action="auth" method="POST">
+						<input type="text" name="username" placeholder="Username" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<input type="submit">
+					</form>
+				</div>
+				<!-- Register -->
+				<div class="signup">
+					<h1>Register Form</h1>
+					<form action="register" method="POST">
+						<input type="text" name="username" placeholder="Username" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<input type="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="script/swap-script.js"></script>
+	</body>
+</html>

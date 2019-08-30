@@ -1,0 +1,105 @@
+#form {
+	width: 300px;
+	margin: 0 auto;
+    font-family: Tahoma, sans-serif;
+}
+
+.login-form h1 {
+	text-align: center;
+	/*color: #4d4d4d;*/
+	font-size: 24px;
+	padding: 20px 0 20px 0;
+}
+
+.login-form input[type="password"],
+.login-form input[type="text"],
+.login-form input[type="email"],
+.article-menu input[type="text"] {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #dddddd;
+	margin-bottom: 15px;
+	box-sizing:border-box;
+}
+
+.article-contenu {
+	min-height:100px;
+	width:100%;
+}
+
+.login-form input[type="submit"],
+.article-menu input[type="submit"] {
+	width: 100%;
+	padding: 15px;
+	background-color: #535b63;
+	border: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#form {
+	position:absolute;
+	max-width:480px;
+	height:480px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	overflow:hidden;
+	border:1px black solid;
+	border-radius:5px;
+}
+
+#form .head {
+	width:100%;
+	height:55px;
+	display:flex;
+}
+
+#form .head > div {
+	width:50%;
+	height:100%;
+	text-align:center;
+	line-height:55px;
+	cursor:pointer;
+	background:transparent;
+	text-transform: uppercase;
+	font-size:15px;
+}
+
+#form .head > div:hover {
+	background-color:#e3e3e3;
+}
+
+#form-body.login-form > div {
+	position:absolute;
+	width:100%;
+	height:100%;
+	transition:all 300ms ease-in-out;
+}
+
+#form-body.login-form > div.login {
+	left:0%;
+}
+
+#form-body.login-form > div.signup {
+	left:100%;
+}
+
+#form-body.login-form.active > div.login {
+	left:-100%;
+}
+
+#form-body.login-form.active > div.signup {
+	left:0%;
+}
+
+.article-menu {
+	display:flex;
+}
+
+a.logout {
+	margin-bottom:15px;
+	display:block;
+}
